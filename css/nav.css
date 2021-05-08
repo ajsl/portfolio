@@ -1,0 +1,25 @@
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0px 10px 10px; }
+  .header h1 {
+    padding-left: 20px; }
+
+.nav-btn {
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  background-color: #bfbfbf;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.nav-btn:hover {
+  background-color: #adadad; }
+
+.button-container {
+  margin-top: 20px; }

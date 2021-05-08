@@ -1,0 +1,18 @@
+.nav-bar {
+  margin-left: 12%; }
+
+.header-container {
+  background-color: rgba(101, 163, 250, 0.652);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0; }
+  .header-container .heading-container {
+    display: flex;
+    align-items: baseline;
+    width: 50%; }
+  .header-container .nav-items {
+    display: flex;
+    width: 40%;
+    align-items: space-around; }
