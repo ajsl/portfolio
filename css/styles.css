@@ -144,7 +144,6 @@ body {
 
 .contact-container {
   background-color: rgba(101, 163, 250, 0.652);
-  height: 300px;
   padding: 50px 20px; }
 
 footer {
@@ -178,7 +177,7 @@ p {
   padding: 5px 10px;
   line-height: 1.5;
   font-family: 'EB Garamond', serif;
-  text-align: center; }
+  text-align: left; }
 
 b {
   font-weight: bold;
@@ -314,6 +313,11 @@ html:not([data-scroll='0']) .back-to-top {
   background-color: rgba(101, 163, 250, 0.652);
   color: #fff; }
 
+.horizontal-line {
+  width: 50%;
+  height: 2px;
+  background-color: rgba(101, 163, 250, 0.652); }
+
 @media screen and (max-width: 1000px) {
   .wrapper {
     margin: 0;
@@ -331,7 +335,7 @@ html:not([data-scroll='0']) .back-to-top {
 @media screen and (max-width: 600px) {
   .project-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
     padding: 3%	 40px;
     grid-column-gap: 10px;
@@ -380,3 +384,12 @@ html:not([data-scroll='0']) .back-to-top {
     .project-card img {
       width: 200px;
       height: 275px; } }
+
+@media (max-width: 350px) {
+  .project-grid {
+    padding: 0;
+    width: 95%; }
+  .links-container {
+    margin-top: 10px; }
+  .column-container h2 {
+    text-align: center; } }

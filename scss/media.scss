@@ -74,7 +74,7 @@
 @media screen and (max-width: 600px) {
 	.project-grid {
 	display: grid; 
-	grid-template-rows: 1fr 1fr 1fr; 
+	grid-template-rows: auto; 
 	grid-template-columns: 1fr;
 	padding: 3%	 40px;
 	grid-column-gap: 10px ;
@@ -147,6 +147,21 @@
 		img {
 			width: 200px;
 			height: 275px;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.project-grid {
+		padding: 0;
+		width: 95%;
+	}
+	.links-container {
+		margin-top: 10px;
+	}
+	.column-container {
+		h2 {
+			text-align: center;
 		}
 	}
 }
