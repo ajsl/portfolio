@@ -1,7 +1,6 @@
 @media screen and (max-width: 1000px) {
 	.wrapper {
 		margin: 0;
-		width: 100%
 	}
 	.project-grid {
 		grid-template-columns: 1fr 10fr 1fr;
@@ -16,6 +15,11 @@
 
 	.button-container {
 		margin-right: 5px;
+	}
+	.back-to-top {
+		display: none;
+		
+		
 	}
 
 }

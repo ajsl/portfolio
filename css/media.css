@@ -1,7 +1,6 @@
 @media screen and (max-width: 1000px) {
   .wrapper {
-    margin: 0;
-    width: 100%; }
+    margin: 0; }
   .project-grid {
     grid-template-columns: 1fr 10fr 1fr; }
   .heading-container {
@@ -10,7 +9,9 @@
     .heading-container .heading {
       margin: 0; }
   .button-container {
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .back-to-top {
+    display: none; } }
 
 @media screen and (max-width: 600px) {
   .project-grid {
