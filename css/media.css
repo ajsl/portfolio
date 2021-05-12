@@ -48,7 +48,14 @@
     .header-container .heading-container {
       flex-direction: column; }
     .header-container .nav-items {
-      width: 100%; }
+      width: 100%;
+      padding: 10px 0; }
+  .expand-menu {
+    display: block !important; }
+  .show-element-mobile {
+    display: block; }
+  .hide-element-mobile {
+    display: none; }
   .project-card-container {
     display: flex;
     align-self: center;

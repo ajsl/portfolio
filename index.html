@@ -14,9 +14,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <link rel="apple-touch-icon" href="" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
 
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
@@ -32,7 +32,7 @@
               <h1 class="heading">JAMES LEITH</h1>
               <h3 class="sub-heading">(Web Developer)</h3>
             </div>
-            <div class="nav-items">
+            <div id="navItems" class="nav-items hide-element-mobile">
               <a class="button-container" href="#recent"
                 ><button class="nav-btn">Recent Projects</button></a
               >
@@ -42,6 +42,26 @@
               <a class="button-container" href="#contact"
                 ><button class="nav-btn">Contact me</button></a
               >
+            </div>
+            <div
+              onclick="toggleMenu()"
+              class="expand-menu"
+              style="display: none"
+            >
+              <a
+                ><span
+                  id="expandMenuDown"
+                  class="iconify show-element-mobile"
+                  data-icon="fa:angle-down"
+                  data-inline="false"
+                ></span>
+                <span
+                  id="expandMenuUp"
+                  class="iconify hide-element-mobile"
+                  data-icon="fa:angle-up"
+                  data-inline="false"
+                ></span
+              ></a>
             </div>
           </div>
         </header>
@@ -87,7 +107,7 @@
           </div>
         </article>
 
-        <hr class="horizontal-line">
+        <hr class="horizontal-line" />
 
         <!-- recent projects below -->
         <!-- 3 card with project screen shots and links to either the working site/app or the repository -->

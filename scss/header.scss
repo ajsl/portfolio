@@ -5,6 +5,7 @@
 }
 
 .header-container {
+  position: relative;
   background-color: $portfolio-blue;
   height: 100px;
   display: flex;
@@ -18,9 +19,5 @@
     width: 50%;
   }
 
-  .nav-items {
-	  display: flex;
-	  width: 40%; 
-	  align-items: space-around;
-  }
+
 }
