@@ -14,7 +14,6 @@ const debounce = (fn) => {
 
 const storeScroll = () => {
   document.documentElement.dataset.scroll = window.scrollY;
-  console.log(window.scrollY);
 };
 
 document.addEventListener("scroll", debounce(storeScroll), { passive: true });

@@ -16,7 +16,8 @@ p {
   padding: 5px 10px;
   line-height: 1.5;
   font-family: 'EB Garamond', serif;
-  text-align: left; }
+  text-align: left;
+  width: 100%; }
 
 b {
   font-weight: bold;

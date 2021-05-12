@@ -7,7 +7,7 @@ body {
   background-color: #fff;
   padding: 7px; }
   .wrapper li {
-    border: 1px solid black;
+    border: 1px solid #090909;
     text-align: center; }
 
 .inner-wrapper {
@@ -74,7 +74,7 @@ body {
   border-radius: 5px; }
 
 .text-container {
-  padding: 50px 20px 50px 20px; }
+  padding: 50px 40px; }
   .text-container h3 {
     margin-bottom: 20px; }
 
