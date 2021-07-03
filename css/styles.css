@@ -154,21 +154,21 @@ footer {
     text-align: center; }
 
 .wrapper {
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 h1 {
   margin-left: 10%;
   font-size: 40px;
-  letter-spacing: .3rem; }
+  letter-spacing: 0.3rem; }
 
 h2 {
   font-size: 36px;
-  letter-spacing: .3rem; }
+  letter-spacing: 0.3rem; }
 
 p {
   padding: 5px 10px;
   line-height: 1.5;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   text-align: left;
   width: 100%; }
 
@@ -178,12 +178,15 @@ b {
 
 h4 {
   font-size: 20px;
-  font-family: 'EB Garamond', serif; }
+  font-family: "EB Garamond", serif; }
 
 h3 {
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-size: 18px;
   font-weight: bold; }
+
+.email-link {
+  color: #090909; }
 
 .nav-bar {
   margin-left: 12%; }
@@ -214,6 +217,10 @@ h3 {
   padding: 10px 0px 10px 10px; }
   .header h1 {
     padding-left: 20px; }
+
+.btn-expand {
+  background: transparent;
+  border: none; }
 
 .nav-btn {
   font-size: 18px;

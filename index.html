@@ -1,290 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+<head>
+  <meta charset="utf-8" />
 
-    <title>James Leith Portfolio</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <meta name="description" content="another website" />
+  <title>James Leith Portfolio</title>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+  <meta name="description" content="another website" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
 
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  </head>
-  <body>
-    <main class="wrapper">
-      <div class="inner-wrapper">
-        <!-- centered title and sub with a contact me button in the top right hand corner -->
-        <header>
-          <div class="header-container">
-            <div class="heading-container">
-              <h1 class="heading">JAMES LEITH</h1>
-              <h3 class="sub-heading">(Web Developer)</h3>
-            </div>
-            <div id="navItems" class="nav-items hide-element-mobile">
-              <a class="button-container" href="#recent"
-                ><button class="nav-btn">Recent Projects</button></a
-              >
-              <a class="button-container" href="#about"
-                ><button class="nav-btn">About Me</button></a
-              >
-              <a class="button-container" href="#contact"
-                ><button class="nav-btn">Contact me</button></a
-              >
-            </div>
-            <div
-              onclick="toggleMenu()"
-              class="expand-menu"
-              style="display: none"
-            >
-              <a
-                ><span
-                  id="expandMenuDown"
-                  class="iconify show-element-mobile"
-                  data-icon="fa:angle-down"
-                  data-inline="false"
-                ></span>
-                <span
-                  id="expandMenuUp"
-                  class="iconify hide-element-mobile"
-                  data-icon="fa:angle-up"
-                  data-inline="false"
-                ></span
-              ></a>
-            </div>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+  <main class="wrapper">
+    <div class="inner-wrapper">
+      <!-- centered title and sub with a contact me button in the top right hand corner -->
+      <header>
+        <div class="header-container">
+          <div class="heading-container">
+            <h1 class="heading">JAMES LEITH</h1>
+            <h3 class="sub-heading">(Web Developer)</h3>
           </div>
-        </header>
-        <!-- about me section-->
-        <article id="about" class="about-container">
-          <div class="column-container text-container">
-            <h3>About Me</h3>
-            <p>
-              In 2020 I left my job and life in the UK to be with my wife in the
-              USA. After lockdowns, quarantines and crazy visa delays, I'm
-              finally settled in Northern Arizona and looking to get back on the
-              saddle, continuing my career as a developer.
+          <div id="navItems" class="nav-items hide-element-mobile">
+            <a class="button-container" href="#about"><button class="nav-btn">About Me</button></a>
+            <a class="button-container" href="#recent"><button class="nav-btn">Recent Projects</button></a>
+            <a class="button-container" href="#contact"><button class="nav-btn">Contact me</button></a>
+          </div>
+          <div onclick="toggleMenu()" class="expand-menu" style="display: none">
+            <button aria-label="Expand Menu" class="btn-expand"><span id="expandMenuDown" class="iconify show-element-mobile" data-icon="fa:angle-down"
+                data-inline="false"></span>
+              <span id="expandMenuUp" class="iconify hide-element-mobile" data-icon="fa:angle-up"
+                data-inline="false"></span></button>
+          </div>
+        </div>
+      </header>
+      <!-- about me section-->
+      <article id="about" class="about-container">
+        <div class="column-container text-container">
+          <h3>About Me</h3>
+          <p>
+            In 2020 I left my job and life in the UK to be with my wife in the
+            USA. After lockdowns, quarantines and crazy visa delays, I'm
+            finally settled in Northern Arizona and looking to get back on the
+            saddle, continuing my career as a developer.
+          </p>
+          <p>
+            3 years ago I made the decision to leave the wine world and embark
+            on a career in the tech industry. Having started to teach myself
+            the basics of front end web development, I enrolled on a 12 week
+            bootcamp (DevelopMe’s Coding Fellowship in Bristol). Following
+            this I secured a full stack application developer position at a
+            leading car financing company. Getting to problem solve on a daily
+            basis, working with a bright, like minded and motivated team made
+            this my most rewarding job to date.
+          </p>
+          <p>
+            I have a very diverse background; starting with a degree in Sports
+            Science, I was drawn in with a passion for endurance sport and a
+            keen interest in improving my rowing and triathlon performance. I
+            later started a career in the super yacht industry, where I worked
+            on deck on various large motor yachts in the Mediterranean and
+            further afield. Before my current career switch I was working in
+            private client sales for a very highly regarded independent
+            merchant in Bristol UK, learning about and selling some of the
+            greatest wines in the world. I loved my time in the industry and
+            will continue my exploration of the wine world in my own time.
+          </p>
+          <p>
+            Away from the world of work I have a love of the outdoors, whether
+            that be sailing, skiing, climbing or most often trail running.
+            Training to a high level in triathlon during and after university
+            lead me to a passion for running, a sport that has taken me as far
+            afield as the Mountains of Nepal and distances of over 70 miles.
+          </p>
+        </div>
+      </article>
+
+      <hr class="horizontal-line" />
+
+      <!-- recent projects below -->
+      <!-- 3 card with project screen shots and links to either the working site/app or the repository -->
+      <section id="recent" class="project-grid">
+        <div class="project-1 project-card-container">
+          <a href="http://165.232.159.187/">
+            <div class="project-card">
+              <!-- todo hover display a zoomed image -->
+              <img src="./images/code-blog.png" alt="blog project screen shot" />
+            </div>
+          </a>
+          <div class="card-text-container">
+            <h2 class="card-heading">Blog</h2>
+            <p class="card-text">
+              A work in progress, built with an ASP.NET Core, Entity Framework
+              with PostgreSQL and an Angular UI
             </p>
-            <p>
-              3 years ago I made the decision to leave the wine world and embark
-              on a career in the tech industry. Having started to teach myself
-              the basics of front end web development, I enrolled on a 12 week
-              bootcamp (DevelopMe’s Coding Fellowship in Bristol). Following
-              this I secured a full stack application developer position at a
-              leading car financing company. Getting to problem solve on a daily
-              basis, working with a bright, like minded and motivated team made
-              this my most rewarding job to date.
+            <p class="card-text">Click the image to see the blog.</p>
+          </div>
+        </div>
+        <div class="project-2 project-card-container">
+          <a href="http://calculator.ajsleith.com/">
+            <div class="project-card">
+              <img src="./images/calculator.png" alt="calculator app screen shot" />
+            </div>
+          </a>
+          <div class="card-text-container">
+            <h2 class="card-heading">Calculator</h2>
+            <p class="card-text">
+              A simple calculator app built with an Angular UI, all the
+              calculations are done server side with a .NET Core API.
             </p>
-            <p>
-              I have a very diverse background; starting with a degree in Sports
-              Science, I was drawn in with a passion for endurance sport and a
-              keen interest in improving my rowing and triathlon performance. I
-              later started a career in the super yacht industry, where I worked
-              on deck on various large motor yachts in the Mediterranean and
-              further afield. Before my current career switch I was working in
-              private client sales for a very highly regarded independent
-              merchant in Bristol UK, learning about and selling some of the
-              greatest wines in the world. I loved my time in the industry and
-              will continue my exploration of the wine world in my own time.
+            <p class="card-text">Click the image to see the app.</p>
+          </div>
+        </div>
+        <div class="project-3 project-card-container">
+          <a href="http://blog.ajsleith.com/">
+            <div class="project-card">
+              <img src="./images/wine-blog.png" alt="screen shot of blog project" />
+            </div>
+          </a>
+          <div class="card-text-container">
+            <h2 class="card-heading">Wine Blog</h2>
+            <p class="card-text">
+              An experiment, a blog with an Angular UI, requesting the data
+              from the WordPress API.
             </p>
-            <p>
-              Away from the world of work I have a love of the outdoors, whether
-              that be sailing, skiing, climbing or most often trail running.
-              Training to a high level in triathlon during and after university
-              lead me to a passion for running, a sport that has taken me as far
-              afield as the Mountains of Nepal and distances of over 70 miles.
+            <p class="card-text">Click the image to see the blog.</p>
+          </div>
+        </div>
+        <div class="project-4 project-card-container">
+          <a href="http://dicescore.ajsleith.com">
+            <div class="project-card">
+              <img src="./images/farkel.png" alt="farkel score app screen shot" />
+            </div>
+          </a>
+          <div class="card-text-container">
+            <h2 class="card-heading">Farkel Score</h2>
+            <p class="card-text">
+              App to score the dice game Farkel, built with React and Redux.
+              One of our favorite post dinner games, built so that my wife
+              could keep score.
             </p>
+            <p class="card-text">Click the image to see the app.</p>
           </div>
-        </article>
+        </div>
+        <div class="project-5 project-card-container">
+          <a href="http://roman.ajsleith.com">
+            <div class="project-card">
+              <img src="./images/roman.png" alt="Roman numeral conversion app screen shot" />
+            </div>
+          </a>
+          <div class="card-text-container">
+            <h2 class="card-heading">Numeral Conversion</h2>
+            <p class="card-text">
+              A simple Angular app that converts Roman numerals. Following on
+              from a codewars kata, I was so please I'd managed to solve it I
+              decided to build an app.
+            </p>
+            <p class="card-text">Click the image to see the app.</p>
+          </div>
+        </div>
+        <div class="project-6 project-card-container">
+          <a href="http://5-a-side.ajsleith.com">
+            <div class="project-card">
+              <img src="./images/5-a-side.png" alt="5-a-side team picker app screen shot" />
+            </div>
+          </a>
+          <div class="card-text-container">
+            <h2 class="card-heading">5-a-side Team Picker</h2>
+            <p class="card-text">
+              5-a-side team picker. React app with redux. This was the first
+              solo project I created after attending the DevelopMe bootcamp.
+            </p>
+            <p class="card-text">Click the image to see the app.</p>
+          </div>
+        </div>
+        <div class="project-7 project-card-container">
+          <a href="https://escapingthecity.co.uk">
+            <div class="project-card">
+              <img src="./images/escape-site.png" alt="wordpress site screen shot" />
+            </div>
+          </a>
+          <div class="card-text-container">
+            <h2 class="card-heading">Wordpress blog</h2>
+            <p class="card-text">
+              Escaping the city wordpress blog. A wordpress blog for my sister
+              Using a custom theme.
+            </p>
+            <p class="card-text">Click the image to see the blog.</p>
+          </div>
+        </div>
+      </section>
 
-        <hr class="horizontal-line" />
+      <!-- links to git hub code pen ect.. -->
+      <!-- Large icons inline -->
+      <section id="contact" class="links-container">
+        <a href="https://github.com/ajsl"><img class="social-icon" src="./images/github.png" alt="github link" /></a>
+        <a href="https://www.instagram.com/ajsl2/"><img class="social-icon" src="./images/instagram.png"
+            alt="Instagram link" /></a>
+        <a href="https://www.linkedin.com/in/james-leith-20328586/"><img class="social-icon"
+            src="./images/linked_in.png" alt="Linked in link" /></a>
+      </section>
 
-        <!-- recent projects below -->
-        <!-- 3 card with project screen shots and links to either the working site/app or the repository -->
-        <section id="recent" class="project-grid">
-          <div class="project-1 project-card-container">
-            <a href="http://165.232.159.187/">
-              <div class="project-card">
-                <img
-                  src="./images/code-blog.png"
-                  alt="blog project screen shot"
-                />
-              </div>
-            </a>
-            <div class="card-text-container">
-              <h2 class="card-heading">Blog</h2>
-              <p class="card-text">
-                A work in progress, built with an ASP.NET Core, Entity Framework
-                with PostgreSQL and an Angular UI
-              </p>
-              <p class="card-text">Click the image to see the blog.</p>
-            </div>
-          </div>
-          <div class="project-2 project-card-container">
-            <a href="http://64.227.101.2/">
-              <div class="project-card">
-                <img
-                  src="./images/calculator.png"
-                  alt="calculator app screen shot"
-                />
-              </div>
-            </a>
-            <div class="card-text-container">
-              <h2 class="card-heading">Calculator</h2>
-              <p class="card-text">
-                A simple calculator app built with an Angular UI, all the
-                calculations are done server side with a .NET Core API.
-              </p>
-              <p class="card-text">Click the image to see the app.</p>
-            </div>
-          </div>
-          <div class="project-3 project-card-container">
-            <a href="http://blog.ajsleith.com/">
-              <div class="project-card">
-                <img
-                  src="./images/wine-blog.png"
-                  alt="screen shot of blog project"
-                />
-              </div>
-            </a>
-            <div class="card-text-container">
-              <h2 class="card-heading">Wine Blog</h2>
-              <p class="card-text">
-                An experiment, a blog with an Angular UI, requesting the data
-                from the WordPress API.
-              </p>
-              <p class="card-text">Click the image to see the blog.</p>
-            </div>
-          </div>
-          <div class="project-4 project-card-container">
-            <a href="http://dicescore.ajsleith.com">
-              <div class="project-card">
-                <img
-                  src="./images/farkel.png"
-                  alt="farkel score app screen shot"
-                />
-              </div>
-            </a>
-            <div class="card-text-container">
-              <h2 class="card-heading">Farkel Score</h2>
-              <p class="card-text">
-                App to score the dice game Farkel, built with React and Redux.
-                One of our favorite post dinner games, built so that my wife
-                could keep score.
-              </p>
-              <p class="card-text">Click the image to see the app.</p>
-            </div>
-          </div>
-          <div class="project-5 project-card-container">
-            <a href="http://roman.ajsleith.com">
-              <div class="project-card">
-                <img
-                  src="./images/roman.png"
-                  alt="Roman numeral conversion app screen shot"
-                />
-              </div>
-            </a>
-            <div class="card-text-container">
-              <h2 class="card-heading">Numeral Conversion</h2>
-              <p class="card-text">
-                A simple Angular app that converts Roman numerals. Following on
-                from a codewars kata, I was so please I'd managed to solve it I
-                decided to build an app.
-              </p>
-              <p class="card-text">Click the image to see the app.</p>
-            </div>
-          </div>
-          <div class="project-6 project-card-container">
-            <a href="http://5-a-side.ajsleith.com">
-              <div class="project-card">
-                <img
-                  src="./images/5-a-side.png"
-                  alt="5-a-side team picker app screen shot"
-                />
-              </div>
-            </a>
-            <div class="card-text-container">
-              <h2 class="card-heading">5-a-side Team Picker</h2>
-              <p class="card-text">
-                5-a-side team picker. React app with redux. This was the first
-                solo project I created after attending the DevelopMe bootcamp.
-              </p>
-              <p class="card-text">Click the image to see the app.</p>
-            </div>
-          </div>
-          <div class="project-7 project-card-container">
-            <a href="http://escapingthecity.co.uk">
-              <div class="project-card">
-                <img
-                  src="./images/escape-site.png"
-                  alt="wordpress site screen shot"
-                />
-              </div>
-            </a>
-            <div class="card-text-container">
-              <h2 class="card-heading">Wordpress blog</h2>
-              <p class="card-text">
-                Escaping the city wordpress blog. A wordpress blog for my sister
-                Using a custom theme.
-              </p>
-              <p class="card-text">Click the image to see the blog.</p>
-            </div>
-          </div>
-        </section>
+      <!-- contact me section-->
+      <section class="contact-container">
+        <div class="column-container">
+          <h2>Get in Touch</h2>
+          <h4><a class="email-link" href="mailto:ajsleith@gmail.com">ajsleith@gmail.com</a></h4>
+        </div>
+      </section>
+      <!--footer-->
 
-        <!-- links to git hub code pen ect.. -->
-        <!-- Large icons inline -->
-        <section id="contact" class="links-container">
-          <a target="_blank" href="https://github.com/ajsl"
-            ><img
-              class="social-icon"
-              src="./images/github.png"
-              alt="github link"
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/ajsl2/"
-            ><img
-              class="social-icon"
-              src="./images/instagram.png"
-              alt="Instagram link"
-          /></a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/james-leith-20328586/"
-            ><img
-              class="social-icon"
-              src="./images/linked_in.png"
-              alt="Linked in link"
-          /></a>
-        </section>
+      <footer class="footer">
+        <h4>James Leith</h4>
+      </footer>
+    </div>
+  </main>
+  <a href="#" class="back-to-top">
+    <span class="iconify" data-icon="fa:angle-up" data-inline="false"></span>
+  </a>
+</body>
 
-        <!-- contact me section-->
-        <section class="contact-container">
-          <div class="column-container">
-            <h2>Get in Touch</h2>
-            <h4><a href="mailto:ajsleith@gmail.com">ajsleith@gmail.com</a></h4>
-          </div>
-        </section>
-        <!--footer-->
-
-        <footer class="footer">
-          <h4>James Leith</h4>
-        </footer>
-      </div>
-    </main>
-    <a href="#" class="back-to-top">
-      <span class="iconify" data-icon="fa:angle-up" data-inline="false"></span>
-    </a>
-  </body>
 </html>
 
 <script type="text/javascript" src="main.js"></script>
