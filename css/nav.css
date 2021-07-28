@@ -18,10 +18,25 @@
 
 .nav-btn {
   font-size: 18px;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   background-color: #bfbfbf;
   border-radius: 5px;
   cursor: pointer; }
+
+a.nav-btn {
+  border: 1.99653px outset #767676;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1px 6px;
+  margin: 0 20px;
+  color: #090909;
+  text-decoration: none; }
 
 .nav-btn:hover {
   background-color: #adadad; }

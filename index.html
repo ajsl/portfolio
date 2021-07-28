@@ -37,8 +37,8 @@
             <a class="button-container" href="#contact"><button class="nav-btn">Contact me</button></a>
           </div>
           <div onclick="toggleMenu()" class="expand-menu" style="display: none">
-            <button aria-label="Expand Menu" class="btn-expand"><span id="expandMenuDown" class="iconify show-element-mobile" data-icon="fa:angle-down"
-                data-inline="false"></span>
+            <button aria-label="Expand Menu" class="btn-expand"><span id="expandMenuDown"
+                class="iconify show-element-mobile" data-icon="fa:angle-down" data-inline="false"></span>
               <span id="expandMenuUp" class="iconify hide-element-mobile" data-icon="fa:angle-up"
                 data-inline="false"></span></button>
           </div>
@@ -87,6 +87,18 @@
       </article>
 
       <hr class="horizontal-line" />
+      <div class="column-container">
+        <h3 class="vertical-padding">My Tech Stack</h3>
+        <div class="tech-icon-container flex-wrap">
+          <img src="./Images/javascript.svg" alt="javascript icon">
+          <img src="./Images/angularjs.svg" alt="angular icon">
+          <img src="./Images/react.svg" alt="React Js icon">
+          <img src="./Images/redux.svg" alt="Redux icon">
+          <img src="./Images/dotnet-vertical.svg" alt="dotnet icon">
+          <img src="./Images/c-sharp-logo.svg" alt="c# icon">
+          <img src="./Images/wordpress.svg" alt="wordpress icon">
+        </div>
+      </div>
 
       <!-- recent projects below -->
       <!-- 3 card with project screen shots and links to either the working site/app or the repository -->
@@ -100,11 +112,23 @@
           </a>
           <div class="card-text-container">
             <h2 class="card-heading">Blog</h2>
+            <div class="tech-icon-container">
+              <img src="./Images/angularjs.svg" alt="angular logo">
+              <img src="./Images/dotnet-vertical.svg" alt="dotnet logo">
+            </div>
             <p class="card-text">
               A work in progress, built with an ASP.NET Core, Entity Framework
               with PostgreSQL and an Angular UI
             </p>
-            <p class="card-text">Click the image to see the blog.</p>
+            <div class="button-container flex">
+              <a href="http://165.232.159.187/" class="nav-btn">
+                Visit Site
+              </a>
+              <a href="https://github.com/ajsl/code-blog" class="nav-btn">
+                View Code
+              </a>
+            </div>
+            <!-- <p class="card-text">Click the image to see the blog.</p> -->
           </div>
         </div>
         <div class="project-2 project-card-container">
@@ -115,11 +139,23 @@
           </a>
           <div class="card-text-container">
             <h2 class="card-heading">Calculator</h2>
+            <div class="tech-icon-container">
+              <img src="./Images/angularjs.svg" alt="angular logo">
+              <img src="./Images/c-sharp-logo.svg" alt="c# logo">
+              <img src="./Images/dotnet-vertical.svg" alt="dotnet logo">
+            </div>
             <p class="card-text">
               A simple calculator app built with an Angular UI, all the
               calculations are done server side with a .NET Core API.
             </p>
-            <p class="card-text">Click the image to see the app.</p>
+            <div class="button-container flex">
+              <a href="http://calculator.ajsleith.com/" class="nav-btn">
+                Visit Site
+              </a>
+              <a href="https://github.com/ajsl/calculator.API" class="nav-btn">
+                View Code
+              </a>
+            </div>
           </div>
         </div>
         <div class="project-3 project-card-container">
@@ -130,11 +166,22 @@
           </a>
           <div class="card-text-container">
             <h2 class="card-heading">Wine Blog</h2>
+            <div class="tech-icon-container">
+              <img src="./Images/angularjs.svg" alt="angular logo">
+              <img src="./Images/wordpress.svg" alt="wordpress logo">
+            </div>
             <p class="card-text">
               An experiment, a blog with an Angular UI, requesting the data
               from the WordPress API.
             </p>
-            <p class="card-text">Click the image to see the blog.</p>
+            <div class="button-container flex">
+              <a href="http://blog.ajsleith.com/" class="nav-btn">
+                Visit Site
+              </a>
+              <a href="https://github.com/ajsl/wine-blog" class="nav-btn">
+                View Code
+              </a>
+            </div>
           </div>
         </div>
         <div class="project-4 project-card-container">
@@ -145,12 +192,24 @@
           </a>
           <div class="card-text-container">
             <h2 class="card-heading">Farkel Score</h2>
+            <div class="tech-icon-container">
+              <img src="./Images/react.svg" alt="React Js logo">
+              <img src="./Images/redux.svg" alt="Redux logo">
+            </div>
             <p class="card-text">
               App to score the dice game Farkel, built with React and Redux.
               One of our favorite post dinner games, built so that my wife
               could keep score.
             </p>
-            <p class="card-text">Click the image to see the app.</p>
+
+            <div class="button-container flex">
+              <a href="http://dicescore.ajsleith.com" class="nav-btn">
+                Visit Site
+              </a>
+              <a href="https://github.com/ajsl/farkel-score-react-redux" class="nav-btn">
+                View Code
+              </a>
+            </div>
           </div>
         </div>
         <div class="project-5 project-card-container">
@@ -161,12 +220,23 @@
           </a>
           <div class="card-text-container">
             <h2 class="card-heading">Numeral Conversion</h2>
+            <div class="tech-icon-container">
+              <img src="./Images/angularjs.svg" alt="angular logo">
+              <img src="./Images/javascript.svg" alt="javascript logo">
+            </div>
             <p class="card-text">
               A simple Angular app that converts Roman numerals. Following on
               from a codewars kata, I was so please I'd managed to solve it I
               decided to build an app.
             </p>
-            <p class="card-text">Click the image to see the app.</p>
+            <div class="button-container flex">
+              <a href="http://roman.ajsleith.com" class="nav-btn">
+                Visit Site
+              </a>
+              <a href="https://github.com/ajsl/RomanNumeralConversion" class="nav-btn">
+                View Code
+              </a>
+            </div>
           </div>
         </div>
         <div class="project-6 project-card-container">
@@ -175,13 +245,24 @@
               <img src="./images/5-a-side.png" alt="5-a-side team picker app screen shot" />
             </div>
           </a>
-          <div class="card-text-container">
+          <div class="card-text-container flex">
             <h2 class="card-heading">5-a-side Team Picker</h2>
+            <div class="tech-icon-container">
+              <img src="./Images/react.svg" alt="React Js logo">
+              <img src="./Images/redux.svg" alt="Redux logo">
+            </div>
             <p class="card-text">
               5-a-side team picker. React app with redux. This was the first
               solo project I created after attending the DevelopMe bootcamp.
             </p>
-            <p class="card-text">Click the image to see the app.</p>
+            <div class="button-container">
+              <a href="http://5-a-side.ajsleith.com" class="nav-btn">
+                Visit Site
+              </a>
+              <a href="https://github.com/ajsl/5-a-side-update" class="nav-btn">
+                View Code
+              </a>
+            </div>
           </div>
         </div>
         <div class="project-7 project-card-container">
@@ -192,11 +273,22 @@
           </a>
           <div class="card-text-container">
             <h2 class="card-heading">Wordpress blog</h2>
+            <div class="tech-icon-container">
+              <img src="./Images/wordpress.svg" alt="wordpress logo">
+              <img src="./Images/php-logo.svg" alt="php logo">
+            </div>
             <p class="card-text">
               Escaping the city wordpress blog. A wordpress blog for my sister
               Using a custom theme.
             </p>
-            <p class="card-text">Click the image to see the blog.</p>
+            <div class="button-container flex">
+              <a href="https://escapingthecity.co.uk" class="nav-btn">
+                Visit Site
+              </a>
+              <a href="https://github.com/ajsl/escaping-the-city" class="nav-btn">
+                View Code
+              </a>
+            </div>
           </div>
         </div>
       </section>

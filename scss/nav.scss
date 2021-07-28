@@ -1,45 +1,64 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .nav-items {
-	width: 40%;
-	display: flex;
-	flex-direction: row; 
-	justify-content: space-around;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 10px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0px 10px 10px;
 
-	h1 {
-		padding-left: 20px
-	}
+  h1 {
+    padding-left: 20px;
+  }
 }
 
 .btn-expand {
-	background: transparent;
-	border: none;
+  background: transparent;
+  border: none;
 }
 
 .nav-btn {
-	font-size: 18px;
-	font-family: 'EB Garamond', serif;
-	background-color: $btn-grey;
-	border-radius: 5px;	
-	cursor: pointer;
+  font-size: 18px;
+  font-family: "EB Garamond", serif;
+  background-color: $btn-grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  &.nav-btn {
+    border: 1.99653px outset rgb(118, 118, 118);
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+	border-radius: 5px;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 1px 6px;
+	margin: 0 20px;
+	color: $black;
+	text-decoration: none;
+  }
 }
 
 .nav-btn:hover {
-	background-color: $btn-grey-darker;
+  background-color: $btn-grey-darker;
 }
 
 .button-container {
-	margin-top: 20px;
+  margin-top: 20px;
+//   display: flex;
 }
 
 .expand-menu {
-	position: absolute;
-	bottom: 0;
+  position: absolute;
+  bottom: 0;
 }

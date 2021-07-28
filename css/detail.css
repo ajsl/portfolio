@@ -3,6 +3,9 @@
   .project-grid div h4, .project-grid div p {
     padding: 5px; }
 
+.vertical-padding {
+  padding: 20px 0; }
+
 .project-card {
   position: relative;
   padding: 20px 5px 20px 5px;
@@ -13,7 +16,8 @@
   justify-content: center; }
   .project-card img {
     width: 255px;
-    height: 350px; }
+    height: 350px;
+    border-radius: 5px; }
   .project-card h4 {
     padding-bottom: 20px; }
 
@@ -63,3 +67,16 @@ html:not([data-scroll='0']) .back-to-top {
   width: 50%;
   height: 2px;
   background-color: rgba(101, 163, 250, 0.652); }
+
+.tech-icon-container {
+  display: flex;
+  width: 75%;
+  justify-content: center; }
+  .tech-icon-container img {
+    padding: 0 20px; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.flex {
+  display: flex; }

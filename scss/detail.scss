@@ -8,6 +8,10 @@
 	}
 }
 
+.vertical-padding{
+	padding: 20px 0;
+}
+
 .project-card{
 
 	position: relative;
@@ -21,6 +25,7 @@
 	img {
 		width: 255px;
 		height: 350px;
+		border-radius: 5px;
 	}
 	
 	h4 {
@@ -87,6 +92,23 @@ html:not([data-scroll='0']){
 	width: 50%;
 	height: 2px;
 	background-color: $portfolio-blue;
+}
+
+.tech-icon-container {
+	display: flex;
+	width: 75%;
+	justify-content: center;
+	img {
+		padding: 0 20px;
+	}
+
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex {
+	display: flex;
 }
 
 
