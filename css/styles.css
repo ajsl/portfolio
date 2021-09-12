@@ -426,3 +426,6 @@ html:not([data-scroll='0']) .back-to-top {
   .social-icon {
     height: 80px;
     width: 80px; } }
+
+html {
+  scroll-behavior: smooth; }

@@ -6,3 +6,7 @@
 @import 'nav.scss';
 @import 'detail.scss';
 @import 'media.scss';
+
+html {
+    scroll-behavior: smooth;
+}
